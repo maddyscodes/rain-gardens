@@ -1,0 +1,285 @@
+/* --------------- CSS Imports --------------- */
+
+@import url("reset.css");
+@import url("font.css");
+
+/* --------------- Global Styles --------------- */
+
+*
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html
+{
+	height: 100%;
+	overflow: auto;
+	
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body
+{
+	background: #FFF;
+	
+	text-rendering: optimizeLegibility;
+	vertical-align: baseline;
+}
+
+/* --------------- Images --------------- */
+
+img
+{
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+}
+
+img.imgright
+{
+	float: right;
+	width: 100%;
+	max-width: 450px;
+	margin: 0 0 20px 20px;
+}
+
+img.imgleft
+{
+	float: left;
+	width: 100%;
+	max-width: 450px;
+	margin: 0 20px 10px 0;
+}
+
+#map
+{
+	float: right;
+	width: 100%;
+	height: 100%;
+	max-width: 450px;
+	margin: 0 0 20px 20px;
+}
+
+figcaption {
+	font-size: .8em;
+	color: #8c8c8c;
+	text-align:center;
+	margin: 0 0 1em 0;
+}
+
+.figright {
+	float:right;
+}
+
+.figleft {
+	float:left;
+}
+
+/* ------------------- BG Colors ----------------- */
+
+.color1
+{
+	background: #d5ead5;
+}
+
+/* ----------------- Layout Styles -------------------- */
+
+.container
+{
+	width: 100%;
+	min-width: 280px;
+	line-height: 26px;
+}
+
+	.container .bodycontainer
+	{
+		margin: 0 auto;
+		width: 100%;
+		padding-left: 30px;
+		padding-right: 30px;
+		max-width: 1040px;
+	}
+	
+	.container .fullbodycontainer
+	{
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	
+/* ------------------- Sections ---------------- */
+
+.section
+{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+#headercont
+{
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+
+	#headercont h1
+	{
+		float: left;
+		margin: 0 0 20px 0;
+		font-size: 60px;
+		line-height: 60px;
+		font-weight: 700;
+		letter-spacing: -1px;
+	}
+	
+		#headercont h1 span
+		{
+			display: block;
+			font-size: 30px;
+			line-height: 30px;
+			font-weight: 300;
+		}
+		
+			#headercont h1 a
+			{
+				color: #555;
+			}
+			
+
+	.bg1
+	{
+		background: url("../images/rg.jpg") no-repeat center center fixed;
+		background-size: cover;
+	}
+
+#section1, #section2, #section3, #section4
+{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	
+	min-height: 400px;
+	height: auto;
+}
+
+#footercont
+{
+	float: none;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color: #999;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+	#footercont p
+	{
+		margin: 0;
+	}
+
+	#footercont a
+	{
+		color: #ff5555;
+	}
+	
+		
+/* ------------------- MQ - Tablets -------------------- */
+
+@media screen and (max-width: 768px)
+{
+	
+	img.imgright
+	{
+		float: none;
+		width: 100%;
+		max-width: 400px;
+		margin: 0 0 20px 0;
+	}
+	
+	img.imgleft
+	{
+		float: none;
+		width: 100%;
+		max-width: 400px;
+		margin: 0 0 20px 0;
+	}
+	
+	#map
+	{
+		float: none;
+		width: 100%;
+		max-width: 400px;
+		margin: 0 0 20px 0;
+	}
+	
+	#headercont h1
+	{
+		font-size: 50px;
+		line-height: 50px;
+		letter-spacing: -1px;
+	}
+	
+		#headercont h1 span
+		{
+			font-size: 25px;
+			line-height: 25px;
+		}
+
+	#footercont
+	{
+		text-align: left;
+	}
+	
+	
+}
+
+/* -------------------------- MQ - Mobile ------------------------ */
+
+@media screen and (max-width: 480px)
+{
+	img.imgright
+	{
+		float: none;
+		width: 100%;
+		max-width: 300px;
+		margin: 0 0 10px 0;
+	}
+	
+	img.imgleft
+	{
+		float: none;
+		width: 100%;
+		max-width: 300px;
+		margin: 0 0 10px 0;
+	}
+	
+	#map
+	{
+		float: none;
+		width: 100%;
+		max-width: 300px;
+		margin: 0 0 10px 0;
+	}
+	
+	#headercont h1
+	{
+		font-size: 30px;
+		line-height: 30px;
+		letter-spacing: -1px;
+	}
+	
+		#headercont h1 span
+		{
+			font-size: 15px;
+			line-height: 15px;
+		}
+	
+	#footercont
+	{
+		text-align: left;
+	}
+	
+
+}
+
